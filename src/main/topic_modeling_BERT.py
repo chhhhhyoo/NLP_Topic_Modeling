@@ -114,7 +114,7 @@ def hybrid_loss(logits, labels, weights, alpha=0.8, gamma=2.0):
     return focal_loss
 
 # Training loop
-for epoch in tqdm(range(30), desc="Epoch"):
+for epoch in tqdm(range(5), desc="Epoch"):
     model.train()
     total_loss = 0
     
@@ -233,3 +233,7 @@ can learn from data and generalize to unseen data, and thus
 perform tasks without explicit instructions."""
 keywords = keywordextract(text, model, tokenizer, device)
 print("Extracted Keywords:", keywords)
+
+
+# other embedding transformation
+# something not zero padding
