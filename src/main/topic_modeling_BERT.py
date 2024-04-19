@@ -114,7 +114,7 @@ def hybrid_loss(logits, labels, weights, alpha=0.8, gamma=2.0):
     return focal_loss
 
 # Training loop
-for epoch in tqdm(range(100), desc="Epoch"):
+for epoch in tqdm(range(30), desc="Epoch"):
     model.train()
     total_loss = 0
     
